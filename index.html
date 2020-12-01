@@ -28,7 +28,7 @@
 
         <nav class="main-nav">
             <ul class="menu-list">
-                <li class="menu-item menu-item-session"><a href="#" class="menu-link">Сеансы</a></li>
+                <li class="menu-item menu-item-session menu-item-current"><a href="#" class="menu-link">Сеансы</a></li>
                 <li class="menu-item menu-item-trailer"><a href="#" class="menu-link">Трейлеры</a></li>
                 <li class="menu-item menu-item-news"><a href="#" class="menu-link">Новости</a></li>
                 <li class="menu-item menu-item-about"><a href="#" class="menu-link">О нас</a></li>
@@ -67,26 +67,36 @@
                 <p class="time-label">2d:</p>
                 <ul class="time-list">
                     <li class="time-item">
-                        <time datetime="2020-02-12">12:00 - 13:30</time>
+                        <button type="button" class="button time-button">
+                            <span>12:00 - 13:30</span>
+                        </button>
                     </li>
                     <li class="time-item">
-                        <time datetime="2020-02-12">16:30 - 18:00</time>
+                        <button type="button" class="button time-button">
+                            <span>16:30 - 18:00</span>
+                        </button>
                     </li>
                     <li class="time-item">
-                        <time datetime="2020-02-12">20:00 - 21:30</time>
+                        <button type="button" class="button time-button time-button-current">
+                            <span>20:00 - 21:30</span>
+                        </button>
                     </li>
                 </ul>
                 <p class="time-label">3d:</p>
                 <ul class="time-list">
                     <li class="time-item">
-                        <time datetime="2020-02-12">10:00 - 11:30</time>
+                        <button type="button" class="button time-button">
+                            <span>10:00 - 11:30</span>
+                        </button>
                     </li>
                     <li class="time-item">
-                        <time datetime="2020-02-12">23:00 - 00:30</time>
+                        <button type="button" class="button time-button">
+                            <span>23:00 - 00:30</span>
+                        </button>
                     </li>
                 </ul>
                 <div class="screen">
-                    <p class="screen-text">Экран</p>
+                    <span class="screen-text">Экран</span>
                 </div>
                 <p class="seat-label">Ряд 1</p>
                 <ul class="seat-list">

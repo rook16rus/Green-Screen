@@ -25,7 +25,9 @@ body {
 .button {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
+    border: 0;
     background: #ECF2FF;
+    cursor: pointer;
 }
 
 .page {
@@ -153,12 +155,14 @@ body {
     padding: 23px 15px 23px 60px;
     box-sizing: border-box;
     border-radius: 35px 0 0 35px;
+    color: #fff;
 
     position: relative;
 }
 
-.menu-item:hover {
+.menu-item:hover, .menu-item-current {
     background-color: #ECF2FF;
+    color: #5957DB;
 }
 
 .menu-item:hover .menu-link {
@@ -181,7 +185,7 @@ body {
     background: url("../img/sessions-icon.png") no-repeat center;
 }
 
-.menu-item-session:hover:before {
+.menu-item-session:hover:before, .menu-item-current::before {
     background-image: url("../img/sessions-icon-current.png");
 }
 
@@ -221,7 +225,7 @@ body {
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
-    color: white;
+    color: inherit;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -357,6 +361,68 @@ body {
 
 .button-prev::before {
     transform: translate(-30%, -40%) rotate(225deg);
+}
+
+.time-label {
+    grid-column: 1/2;
+
+    margin: 20px 0 0;
+    font-weight: bold;
+}
+
+.time-list {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.time-item {
+    grid-column: span 2;
+}
+
+.time-button {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #5957DB;
+}
+
+.time-button-current {
+    background-color: #43D000;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(67, 208, 0, 0.6);
+}
+
+.screen {
+    grid-column: 1/-1;
+    padding-top: 30px;
+    text-align: center;
+
+    background: url("../img/screen.png") no-repeat center;
+}
+
+.screen-text {
+    font-weight: bold;
+    color: #CCDAF4;
+    text-transform: uppercase;
+}
+
+.seat-label {
+    grid-column: 1/2;
+}
+
+.seat-list {
+    grid-column: 2/-2;
+}
+
+.seat-param-list {
+    grid-column: 1/7;
 }
 
 .ticket-container {
