@@ -1,0 +1,138 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #666666;
+}
+
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    border: 0;
+    padding: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.button {
+    font-weight: bold;
+    background: #ECF2FF;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:
+            "header header"
+            "nav main";
+}
+
+.main-header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 260px 1fr auto;
+
+    background-color: #ECF2FF;
+}
+
+.logo-container {
+    padding: 20px 102px 20px 60px;
+}
+
+.bread-crumbs-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bread-crumbs-item {
+    position: relative;
+    margin-right: 46px;
+    padding: 30px 0;
+}
+
+.bread-crumbs-item:not(:last-of-type):after {
+    content: "";
+
+    width: 5px;
+    height: 5px;
+    border: 2px solid #5957DB;
+    border-left: transparent;
+    border-bottom: transparent;
+
+    position: absolute;
+    top: 50%;
+    right: -23px;
+    transform: translateY(-60%) rotate(45deg);
+}
+
+.bread-crumbs-link {
+    font-weight: bold;
+    color: #5957DB;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bread-crumbs-link-current {
+    color: #666666;
+}
+
+.header-button-container {
+    margin: 16px 60px 16px 0;
+    position: relative;
+}
+
+.cinema-location {
+    padding: 14px 50px 14px 24px;
+    background: white;
+    border-radius: 10px;
+    border: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5957DB;
+    appearance: none;
+}
+
+.header-button-container::after {
+    content: "";
+
+    width: 5px;
+    height: 5px;
+    border: 2px solid #5957DB;
+    border-left: transparent;
+    border-bottom: transparent;
+
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-120%) rotate(135deg);
+}
+
+.cinema-location  option {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.main-nav {
+    grid-area: nav;
+}
+
+.cinema-parameters {
+    grid-area: main;
+}
+
