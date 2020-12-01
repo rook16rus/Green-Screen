@@ -266,5 +266,186 @@ body {
 
 .cinema-parameters {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 360px;
 }
 
+.choice {
+    padding: 60px;
+}
+
+.ticket-container {
+    padding: 40px 60px;
+    background-color: #5957DB;
+}
+
+
+.ticket header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 20px 30px;
+    border-radius: 10px 10px 0 0;
+    background-color: #43D000;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.ticket header p, .ticket header h3 {
+    margin: 0;
+}
+
+.seat-choice-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+
+    padding: 20px 30px 28px;
+    margin: 0;
+    border-bottom: 2px dashed #ECF2FF;
+    background-color: #fff;
+}
+
+.seat-choice-list dd, .seat-choice-list dt {
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.seat-choice-list dt {
+    color: #aaa;
+}
+
+.seat-choice-list dd {
+    font-weight: bold;
+}
+
+.barcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 28px 0 30px;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+}
+
+.pay-container {
+    padding: 40px 60px;
+    background-color: #ECF2FF;
+}
+
+.pay h3 {
+    margin: 0 0 20px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card {
+    font-family: "Courier New", sans-serif;
+
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #5957DB;
+    box-shadow: 0 8px 20px rgba(89, 87, 219, 0.6);
+}
+
+.card-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.card-logo::before {
+    content: "";
+
+    width: 35px;
+    height: 18px;
+    border-radius: 2px;
+    background-color: #ECF2FF;
+}
+
+.card-logo p {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.card-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 16px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 16px;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.payment-add-button {
+    display: block;
+    position: relative;
+
+    width: 100%;
+    height: 60px;
+    border: 2px solid #CCDAF4;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.payment-add-button::before {
+    content: "+";
+
+    font-weight: 200;
+    font-size: 37px;
+    color: #CCDAF4;
+}
+
+.result-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    margin-top: 60px;
+    padding: 20px 36px;
+    border: 0;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: #43D000;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
