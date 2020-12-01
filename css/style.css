@@ -130,6 +130,138 @@ body {
 
 .main-nav {
     grid-area: nav;
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    background-color: #5957DB;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 20px 0 0 30px;
+    padding: 0;
+}
+
+.menu-item {
+    width: 100%;
+    padding: 23px 15px 23px 60px;
+    box-sizing: border-box;
+    border-radius: 35px 0 0 35px;
+
+    position: relative;
+}
+
+.menu-item:hover {
+    background-color: #ECF2FF;
+}
+
+.menu-item:hover .menu-link {
+    color: #5957DB;
+}
+
+.menu-item::before {
+    content: "";
+
+    width: 18px;
+    height: 22px;
+
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+.menu-item-session::before {
+    background: url("../img/sessions-icon.png") no-repeat center;
+}
+
+.menu-item-session:hover:before {
+    background-image: url("../img/sessions-icon-current.png");
+}
+
+.menu-item-trailer::before {
+    background: url("../img/trailer-icon.png") no-repeat center;
+}
+
+.menu-item-trailer:hover:before {
+    background-image: url("../img/trailer-icon-current.png");
+}
+
+.menu-item-news::before {
+    background: url("../img/news-icon.png") no-repeat center;
+}
+
+.menu-item-news:hover:before {
+    background-image: url("../img/news-icon-current.png");
+}
+
+.menu-item-about::before {
+    background: url("../img/about-icon.png") no-repeat center;
+}
+
+.menu-item-about:hover:before {
+    background-image: url("../img/about-icon-current.png");
+}
+
+.menu-item-contacts::before {
+    background: url("../img/contacts-icon.png") no-repeat center;
+}
+
+.menu-item-contacts:hover:before {
+    background-image: url("../img/contacts-icon-current.png");
+}
+
+.menu-link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu-link::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.profile-container {
+    margin: 0 0 62px 0;
+    padding-left: 112px;
+}
+
+.profile-name {
+    position: relative;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.profile-name::before {
+    content: "";
+
+    width: 40px;
+    height: 40px;
+    background: url("../img/profile.png") no-repeat center;
+
+    position: absolute;
+    left: -52px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .cinema-parameters {
