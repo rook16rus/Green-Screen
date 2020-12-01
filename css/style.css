@@ -23,6 +23,7 @@ body {
 }
 
 .button {
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     background: #ECF2FF;
 }
@@ -242,6 +243,7 @@ body {
 
 .profile-name {
     position: relative;
+    display: inline-block;
 
     font-weight: bold;
     font-size: 14px;
@@ -271,7 +273,90 @@ body {
 }
 
 .choice {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 180px repeat(2, 100px) 60px repeat(2, 120px) 80px;
+    column-gap: 30px;
+
     padding: 60px;
+}
+
+.date-list {
+    grid-column: span 9;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.date-item {
+    grid-column: span 3;
+}
+
+.button-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 0;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #5957DB;;
+}
+
+.button-date-current {
+    background-color: #43D000;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(67, 208, 0, 0.6);
+}
+
+.calendar-date {
+    font-size: 24px;
+    line-height: 30px;
+    color: inherit;
+    margin-bottom: 10px;
+}
+
+.calendar-day {
+    font-weight: normal;
+    color: inherit;
+    text-transform: lowercase;
+}
+
+.button-next, .button-prev {
+    position: relative;
+
+    margin-bottom: 60px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+.button-next::before, .button-prev::before {
+    content: "";
+
+    width: 14px;
+    height: 14px;
+    border: 2px solid #CCDAF4;
+    border-left: transparent;
+    border-bottom: transparent;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.button-next::before {
+    transform: translate(-80%, -40%) rotate(45deg);
+}
+
+.button-prev::before {
+    transform: translate(-30%, -40%) rotate(225deg);
 }
 
 .ticket-container {
@@ -437,7 +522,7 @@ body {
     align-items: flex-start;
 
     width: 100%;
-    margin-top: 60px;
+    margin-top: 45px;
     padding: 20px 36px;
     border: 0;
     border-radius: 30px;
