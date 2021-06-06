@@ -1,3 +1,27 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-ExtraLight.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-ExtraLight.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Courier New";
+    src: url("../fonts/CourierNew-Regular.ttf");
+    font-weight: 400;
+}
+
 body {
     padding: 0;
     margin: 0 auto;
